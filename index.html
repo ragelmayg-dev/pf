@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELEGANCE Perfume | Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Georgia, serif;
+        }
+
+        body {
+            background: #faf6f0;
+            color: #2c211d;
+        }
+
+        header {
+            background: #261b18;
+            color: white;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 27px;
+            letter-spacing: 4px;
+            color: #e8c995;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e8c995;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            gap: 40px;
+            background: linear-gradient(120deg, #f0e2d1, #faf6f0);
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text h4 {
+            color: #99764d;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h1 {
+            font-size: clamp(40px, 6vw, 68px);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            color: #6c5c50;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #34231e;
+            color: white;
+            padding: 15px 28px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #a47b4e;
+        }
+
+        .hero img {
+            width: 43%;
+            max-width: 430px;
+            height: 430px;
+            object-fit: cover;
+            border-radius: 200px 200px 10px 10px;
+            box-shadow: 15px 15px 0 #d8c3a7;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 70px 8%;
+        }
+
+        .welcome h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .welcome p {
+            max-width: 700px;
+            margin: auto;
+            color: #75665b;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #261b18;
+            color: #e8c995;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                width: 85%;
+                height: 320px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">ÉLÉGANCE</div>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="PRODUCTS.html">PRODUCTS</a>
+			<a href="ABOUT.html">ABOUT</a>
+			<a href="CONTACT.html">CONTACT</a>
+			<a href="CART.html">CART</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h4>DISCOVER YOUR SIGNATURE SCENT</h4>
+
+            <h1>A Fragrance That Defines You.</h1>
+
+            <p>
+                Experience the beauty of luxury perfumes.
+                Discover captivating fragrances that express
+                your personality, confidence, and elegance.
+                Find your perfect scent for every occasion.
+            </p>
+
+            <a href="products.html" class="btn">
+                EXPLORE COLLECTION
+            </a>
+        </div>
+
+        <img
+            src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=900&q=85"
+            alt="Luxury perfume collection">
+    </section>
+
+    <section class="welcome">
+        <h2>Welcome to ÉLÉGANCE</h2>
+
+        <p>
+            More than just a fragrance, perfume is an expression
+            of who you are. Explore our collection of elegant
+            scents designed to create unforgettable memories
+            and leave a lasting impression.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 ÉLÉGANCE Perfume. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

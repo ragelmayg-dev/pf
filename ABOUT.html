@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | LUXE Perfume</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf7f2;
+            color: #333;
+        }
+
+        header {
+            background-color: #201812;
+            color: #d9b779;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            letter-spacing: 5px;
+        }
+
+        header p {
+            margin-top: 10px;
+            color: white;
+        }
+
+        nav {
+            background-color: #38291f;
+            padding: 18px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d9b779;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px;
+            background: linear-gradient(135deg, #efe2d0, #d4b89a);
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            color: #38291f;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.8;
+        }
+
+        .about {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 35px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px #00000012;
+            line-height: 1.8;
+        }
+
+        .about h2 {
+            color: #8b633e;
+            margin-bottom: 15px;
+        }
+
+        .about h3 {
+            color: #38291f;
+            margin-top: 22px;
+            margin-bottom: 8px;
+        }
+
+        .products {
+            padding: 30px 20px 50px;
+            text-align: center;
+        }
+
+        .products h2 {
+            color: #38291f;
+            margin-bottom: 25px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .product-card {
+            background: white;
+            width: 250px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px #00000012;
+        }
+
+        .bottle {
+            font-size: 75px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            color: #8b633e;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #38291f;
+            font-weight: bold;
+            margin-top: 12px;
+        }
+
+        .home-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #38291f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .home-btn:hover {
+            background: #8b633e;
+        }
+
+        footer {
+            background: #201812;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            .about {
+                margin: 20px;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ELEGANCE  PERFUME</h1>
+        <p>Discover Your Signature Scent</p>
+    </header>
+
+    <nav>
+        <a href="index.html">HOME</a>
+            <a href="PRODUCTS.html">PRODUCTS</a>
+			<a href="ABOUT.html">ABOUT</a>
+			<a href="CONTACT.html">CONTACT</a>
+			<a href="CART.html">CART</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Elegance in Every Drop</h2>
+        <p>
+            Experience the beauty of fragrance with ELEGANCE  Perfume.
+            Discover captivating scents designed to express your
+            personality, confidence, and unique style.
+        </p>
+    </section>
+
+    <section class="about">
+        <h2>About ELEGANCE Perfume</h2>
+
+        <p>
+            ELEGANCE  Perfume is a perfume brand concept inspired by
+            elegance, luxury, and individuality. We believe that
+            fragrance is more than just a scent — it is a way to
+            express who you are and create unforgettable memories.
+        </p>
+
+        <h3>Our Mission</h3>
+        <p>
+            Our mission is to introduce beautiful fragrance choices
+            that help people feel confident, fresh, and elegant
+            every day.
+        </p>
+
+        <h3>Our Vision</h3>
+        <p>
+            Our vision is to become a recognizable fragrance brand
+            known for timeless style, creativity, and a memorable
+            perfume experience.
+        </p>
+
+        <h3>Why Choose Our Perfumes?</h3>
+        <p>
+            Explore fragrance styles for different moods and occasions,
+            from refreshing floral notes to rich and warm aromas.
+            Find a scent that reflects your own personality.
+        </p>
+
+        <a href="HOME.html" class="home-btn">Back to Home</a>
+    </section>
+
+    <section class="products">
+        <h2>Explore Our Fragrance Collection</h2>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <div class="bottle">🌸</div>
+                <h3>Floral Bloom</h3>
+                <p>A soft floral-inspired fragrance for everyday elegance.</p>
+                <p class="price">Sample price: ₱499</p>
+            </div>
+
+            <div class="product-card">
+                <div class="bottle">✨</div>
+                <h3>Golden Oud</h3>
+                <p>A rich, warm fragrance concept for special occasions.</p>
+                <p class="price">Sample price: ₱699</p>
+            </div>
+
+            <div class="product-card">
+                <div class="bottle">🌿</div>
+                <h3>Fresh Essence</h3>
+                <p>A clean, refreshing scent concept for daily use.</p>
+                <p class="price">Sample price: ₱399</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LUXE PERFUME | All Rights Reserved</p>
+        <p>Elegance in Every Drop.</p>
+    </footer>
+
+</body>
+</html>
+

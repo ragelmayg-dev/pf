@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxury Scents | Perfume Collection</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #faf7f2;
+            color: #29221e;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #211a18;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #d9b779;
+            font-size: 25px;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #d9b779;
+        }
+
+        /* Hero section */
+        .hero {
+            background: linear-gradient(
+                120deg,
+                #30211d,
+                #715044
+            );
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .hero h1 {
+            color: #e6c995;
+            font-family: Georgia, serif;
+            font-size: 46px;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .hero a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 28px;
+            background-color: #d9b779;
+            color: #211a18;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        /* Products */
+        .collection {
+            padding: 55px 8%;
+            text-align: center;
+        }
+
+        .collection h2 {
+            font-family: Georgia, serif;
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            color: #777;
+            margin-bottom: 35px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            background-color: white;
+            padding: 18px;
+            border: 1px solid #eee5d8;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5px;
+            background-color: #eee5d8;
+        }
+
+        .product-card h3 {
+            font-family: Georgia, serif;
+            font-size: 21px;
+            margin: 18px 0 10px;
+        }
+
+        .description {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .price {
+            color: #9b7442;
+            font-size: 19px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .buy-btn {
+            border: none;
+            background-color: #30211d;
+            color: white;
+            padding: 12px 20px;
+            width: 100%;
+            cursor: pointer;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+
+        .buy-btn:hover {
+            background-color: #9b7442;
+        }
+
+        .home-btn {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 13px 25px;
+            background-color: #d9b779;
+            color: #211a18;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #211a18;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer span {
+            color: #d9b779;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 750px) {
+            header {
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+
+            .product-card img {
+                height: 280px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2 class="logo">ELEGANCE</h2>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="PRODUCTS.html">PRODUCTS</a>
+			<a href="ABOUT.html">ABOUT</a>
+			<a href="CONTACT.html">CONTACT</a>
+			<a href="CART.html">CART</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Discover Your Signature Scent</h1>
+
+        <p>
+            Elegant fragrances for every personality.<br>
+            Experience luxury, confidence, and timeless beauty.
+        </p>
+
+        <a href="#collection">EXPLORE COLLECTION</a>
+    </section>
+
+    <!-- Perfume collection -->
+    <section class="collection" id="collection">
+
+        <h2>Our Perfume Collection</h2>
+
+        <p class="subtitle">
+            Find the perfect fragrance that expresses you.
+        </p>
+
+        <div class="product-container">
+
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80"
+                    alt="Elegant perfume bottle">
+
+                <h3>Midnight Rose</h3>
+
+                <p class="description">
+                    A romantic floral fragrance with soft rose
+                    and warm, sensual notes.
+                </p>
+
+                <p class="price">₱899.00</p>
+
+                <button class="buy-btn"
+                    onclick="orderPerfume('Midnight Rose', 899)">
+                    ORDER NOW
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80"
+                    alt="Premium fragrance bottle">
+
+                <h3>Golden Oud</h3>
+
+                <p class="description">
+                    A rich, sophisticated scent with woody notes
+                    and a luxurious finish.
+                </p>
+
+                <p class="price">₱1,299.00</p>
+
+                <button class="buy-btn"
+                    onclick="orderPerfume('Golden Oud', 1299)">
+                    ORDER NOW
+                </button>
+            </div>
+
+            <div class="product-card">
+                <img
+                    src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80"
+                    alt="Luxury perfume">
+
+                <h3>Ocean Breeze</h3>
+
+                <p class="description">
+                    A fresh, clean fragrance inspired by cool
+                    ocean air and summer mornings.
+                </p>
+
+                <p class="price">₱749.00</p>
+
+                <button class="buy-btn"
+                    onclick="orderPerfume('Ocean Breeze', 749)">
+                    ORDER NOW
+                </button>
+            </div>
+
+        </div>
+
+        <a href="link1.html" class="home-btn">
+            ← BACK TO HOME
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 <span>LUXE SCENTS</span> | Your Signature, Your Scent.</p>
+    </footer>
+
+    <script>
+        function orderPerfume(name, price) {
+            alert(
+                "Thank you for choosing " + name +
+                "!\nPrice: ₱" + price.toLocaleString("en-PH", {
+                    minimumFractionDigits: 2
+                }) +
+                "\n\nThis is a demo order. No payment has been made."
+            );
+        }
+    </script>
+
+</body>
+</html>
